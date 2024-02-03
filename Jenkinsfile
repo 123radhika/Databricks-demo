@@ -1,5 +1,5 @@
 node {
-  def GITREPOREMOTE = "https://github.com/Databricks-demo"
+  def GITREPOREMOTE = "https://github.com/123radhika/Databricks-demo"
   def GITBRANCH     = "main"
   def COPYPATH = "Databricks-demo/test.py"
   def WORKSPACEPATH = "/Shared/jenkins-demo"
