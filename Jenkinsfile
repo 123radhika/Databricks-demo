@@ -10,7 +10,7 @@ node {
   }
 
   stage('Deploy') {
-  sh """#!/bin/bash
+  bat """#!/bin/bash
         # Use Databricks CLI to deploy notebooks
         databricks workspace import_dir ${COPYPATH}  ${WORKSPACEPATH}
 
