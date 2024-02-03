@@ -11,7 +11,7 @@ node {
 
   stage('Deploy') {
     echo "hello deploy"
-  //withCredentials([string(credentialsId: DBTOKEN, variable: 'TOKEN')])
+    withCredentials([string(credentialsId: DBTOKEN, variable: 'TOKEN')])
   
   }
 }
