@@ -1,3 +1,4 @@
+echo "hello from jenkins file"
 node {
   def GITREPOREMOTE = "https://github.com/123radhika/Databricks-demo"
   def GITBRANCH     = "main"
