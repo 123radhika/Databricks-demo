@@ -12,9 +12,10 @@ node {
 
   
   stage('Deploy') {
+    #!/bin/sh
     echo "In Stage deploy"
     // Use Databricks CLI to deploy notebooks
-    bat 'databricks workspace import_dir ${COPYPATH} ${WORKSPACEPATH}'
+    //bat 'databricks workspace import_dir ${COPYPATH} ${WORKSPACEPATH}'
        // withCredentials([string(credentialsId: DBTOKEN, variable: 'TOKEN')])"""
   }
 }
