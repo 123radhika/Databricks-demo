@@ -7,7 +7,7 @@ node {
   def DBTOKEN ="dapi5d3c8c244e4419f07ddf97e195920544"
 
   stage('Setup') {
-  withCredentials([string(credentialsId: DBTOKEN, variable: 'TOKEN')]){
+  withCredentials([string(credentialsId: DBTOKEN)]){
   sh """#!/bin/bash
       echo"inside setup"
      """
