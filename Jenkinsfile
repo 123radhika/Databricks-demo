@@ -12,12 +12,11 @@ node {
 
   
   stage('Deploy') {
-  sh """#!/bin/bash
-        echo "hello deploy"
-        # Use Databricks CLI to deploy notebooks
-        databricks workspace import_dir ${COPYPATH} ${WORKSPACEPATH}
-
-     """
+    sh """#!/bin/bash
+          echo "hello deploy"
+          # Use Databricks CLI to deploy notebooks
+          databricks workspace import_dir ${COPYPATH} ${WORKSPACEPATH}
+       """
   withCredentials([string(credentialsId: DBTOKEN, variable: 'TOKEN')])
   
   }
