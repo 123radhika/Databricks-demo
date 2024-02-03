@@ -4,7 +4,11 @@ node {
   def GITBRANCH     = "main"
   def COPYPATH = "Databricks-demo/test.py"
   def WORKSPACEPATH = "/Shared/jenkins-demo"
- 
+  
+  stage('Checkout') {
+    git branch: GITBRANCH, url: GITREPOREMOTE
+  }
+
   stage('Deploy') {
   sh """#!/bin/bash
         # Use Databricks CLI to deploy notebooks
