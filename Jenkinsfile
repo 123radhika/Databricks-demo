@@ -13,7 +13,7 @@ node {
 
   
   stage('Deploy') {
-     powershell '''
+     pwsh '''
        write-script "hello world"
     '''
     // Use Databricks CLI to deploy notebooks
