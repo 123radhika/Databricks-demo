@@ -4,6 +4,7 @@ pipeline {
         stage ('Build') {
             steps {
                 bat 'echo Hello Build stage'
+                bat 'mkdir C:\Db-jenkins-tesst'
             }
         }
         stage ('Test') {
