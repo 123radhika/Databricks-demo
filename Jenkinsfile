@@ -10,7 +10,7 @@ pipeline {
         stage ('Deploy') {
             steps {
                 bat 'echo hello Deploy stage'
-                bat 'C:\\Users\\radhika.neelakanta\\Downloads\\databricks-import.bat'
+                bat 'C:\\Users\\radhika.neelakanta\\Downloads\\databricks-import.bat' C:\\Users\\radhika.neelakanta\\Downloads\\operr.txt 2>&1
             }
         }
     }
