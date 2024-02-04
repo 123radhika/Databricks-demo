@@ -10,7 +10,7 @@ pipeline {
         stage ('Deploy') {
             steps {
                 bat 'echo hello Deploy stage'
-                bat'databricks workspace import_dir C:\Users\radhika.neelakanta\Downloads\s3 static website acg /Shared/jenkins-demo'
+                bat'databricks workspace import_dir C:\\Users\\radhika.neelakanta\\Downloads\\s3 static website acg /Shared/jenkins-demo'
             }
         }
     }
