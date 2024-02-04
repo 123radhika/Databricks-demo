@@ -10,8 +10,4 @@ pipeline {
         stage ('Deploy') {
             steps {
                 bat 'echo hello Deploy stage'
-                bat'C:\\Users\\radhika.neelakanta\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\Scripts\\databricks workspace import_dir C:\\Users\\radhika.neelakanta\\Downloads\\s3 static website acg /Shared/jenkins-demo'
-            }
-        }
-    }
-}
+                bat'C:\\Users\\radhika.neelakanta\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\Scripts\\databricks fs ls'
