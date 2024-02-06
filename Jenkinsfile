@@ -2,7 +2,7 @@ echo "Hello DB"
 node{
   stage('checkout'){
      
-       git branch : 'main', credentialid:'e5a4adda-8639-4cd8-9700-2d68d09bc50c',
+       git branch : 'main', credentialid:'29f7e6d5-5471-4877-a941-54c3c759f0ad',
        url: 'https://github.com/lpv1990/Databricksdemo.git'
         
   }
@@ -15,7 +15,7 @@ node{
      
        bat 'echo Hello deploy stage'
 	   
-	   bat 'C:\\Users\\radhika.neelakanta\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\Scripts\\databricks.exe workspace import_dir C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\jenkinsdemo\\demoone /Shared/jenkins-demo'
+	   // bat 'C:\\Users\\radhika.neelakanta\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python310\\Scripts\\databricks.exe workspace import_dir C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\jenkinsdemo\\demoone /Shared/jenkins-demo'
         
   }
 }
